@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E2DBD0;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #45624E;
+}
+  
+.navbar li {
+  float: left;
+}
+  
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 36px 24px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #273526;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #E2DBD0;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #C0CFB2;
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #45624E;
+}
+
+.aside {
+  background-color: #C0CFB2;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.header-image {
+  width: 100%;
+  z-index: 2;
+  height: 500px; /* Height of the header */
+  background: url('../images/man2.png') no-repeat center center; /* Replace with your image */
+  background-size: cover; /* Ensures the image covers the entire space */
+  border-radius: 50% / 35%; /* Creates the oval shape */
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Adjust the size of the circle */
+  height: 800px; /* Same as width to keep it circular */
+  background-color: rgba(38, 61, 30, 0.336); /* Circle with semi-transparent white */
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.footer {
+  background-color: #45624E;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.header {
+  padding: 10%;
+}
+
+.container {
+  background-color: #45624E;
+}
+
+/* Skills Section */
+.skills {
+  margin-top: 20px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #ccc;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5px 0;
+  position: relative;
+}
+
+.skill-percentage {
+  background-color: #273526;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.skill-percentage-text {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.white {
+  color: white;
+}
+
+/* Add your custom CSS for cards */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%; /* Adjust card width as per the screen size */
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.card-description {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.view-project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #273526;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-project-btn:hover {
+  background-color: #5a6a5a;
+}
